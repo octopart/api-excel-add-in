@@ -19,7 +19,7 @@
           <tab id="CustomTab" label="Octopart">
             <group id="OctopartGroup1" label="Queries">
               <button id="Button1" label="Refresh All Data" image="OctopartRefresh" size="large" onAction="RefreshAllQueries" />
-              <button id="Button2" label="Upload BOM" image="OctopartUpload" size="large" onAction="UploadBom" />
+              <!--<button id="Button2" label="Upload BOM" image="OctopartUpload" size="large" onAction="UploadBom" />--> <!--CURRENTLY DISABLED-->
             </group>
             <group id="OctopartGroup2" label="Formatting">
               <button id="Button3" label="Format Hyperlinks" image="OctopartHyperlink" size="large" onAction="HyperlinkUrlQueries" />
