@@ -3,13 +3,17 @@
 The Octopart Excel Add-In enables you to access pricing and availability data from right within Microsoft Excel. You can pull part information for your BOM all at once without leaving your spreadsheet.
 
 ## Installation
-1. In Excel, choose ‘File' > 'Options’ > ‘Add-Ins’, then press ‘Go’ to manage the ‘Excel Add-Ins’.
+1. Download the Octopart Add-in binary for your system.
+* [Add-in 64bit](OctopartXll\bin\Release\OctopartXll-AddIn64.xll)
+* [Add-in 32bit](OctopartXll\bin\Release\OctopartXll-AddIn.xll)
+
+2. In Excel, choose 'File -> Options -> Add-ins', then press 'Go...' to manage the 'Excel Add-ins'.
 ![](docs/add-ins.png?raw=true)
 
-2. Browse for the OctopartAddIn, make sure it's selected, and press ‘OK’.
+3. Browse for the OctopartAddIn, make sure it's selected, and press 'OK'.
 ![](docs/install.png?raw=true)
 
-3. To use the worksheet functions, simply type “=OCTOPART….” and the list of functions will appear. Refer to Using Functions for documentation on how to use the functions.
+4. To use the worksheet functions, simply type '=OCTOPART' and the list of functions will appear. Refer to Using Functions for documentation on how to use the functions.
 ![](docs/example.png?raw=true)
 
 
@@ -19,14 +23,14 @@ A new ribbon will be added to your toolbar to make use of the new functionality.
 
 
 ## Excel Functions
-The following functions are available through the Add-In. You can also access the guide to each argument by clicking the Function Wizard after you’ve selected any function. Keep in mind that across most functions, the mpn_or_sku field is required; all other fields are optional.
+The following functions are available through the Add-in. You can also access the guide to each argument by clicking the Function Wizard after you've selected any function. Keep in mind that across most functions, the mpn_or_sku field is required; all other fields are optional.
 ![](docs/using.png?raw=true)
 
-The first function that you’ll need to use to activate the Add-In is:
+The first function that you'll need to use to activate the Add-in is:
 
 `=OCTOPART_SET_APIKEY("_apikey_")`
 
-‘_apikey_’ refers to your unique api key as provided by [Octopart](https://octopart.com/my/api). When you've entered it (e.g., =OCTOPART_SET_APIKEY("00000000-0000-0000-0000-000000000000@example.com") the result will read: `Octopart Add-In is ready`. Your api key is used to track your usage of the Add-In.
+'_apikey_' refers to your unique api key as provided by [Octopart](https://octopart.com/my/api). When you've entered it (e.g., =OCTOPART_SET_APIKEY("00000000-0000-0000-0000-000000000000") the result will read: `Octopart Add-In is ready`. Your api key is used to track your usage of the Add-in.
 
 From here on, the world is your oyster:
 
@@ -49,12 +53,12 @@ From here on, the world is your oyster:
 For results that come in a URL format (e.g., for `=octopart_detail_url` or `=octopart_distributor_url`, click the "Format Hyperlinks" button to activate the links:
 
 
-# Building the Excel Add-In (Windows):
+# Building the Excel Add-in (Windows):
 
 ### Required software
   Download and install [Visual Studio](https://www.visualstudio.com/downloads/)
 
-### Generate XLL Add-In:
+### Generate XLL Add-in:
   Visual Studio -> Open Project/Solution -> ./OctopartExcelAddIn.sln
     Build all Projects in Release mode to generate dependencies for Excel-DNA script.
 
