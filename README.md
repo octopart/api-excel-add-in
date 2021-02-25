@@ -4,8 +4,10 @@ The Octopart Excel Add-In enables you to access pricing and availability data fr
 
 ## Installation
 1. Download the Octopart Add-in binary for your system.
-* [Add-in 64bit](OctopartXll\bin\Release\OctopartXll-AddIn64.xll)
-* [Add-in 32bit](OctopartXll\bin\Release\OctopartXll-AddIn.xll)
+* [Add-in 64bit](OctopartXll/bin/Release/OctopartXll-AddIn64.xll)
+* [Add-in 32bit](OctopartXll/bin/Release/OctopartXll-AddIn.xll)
+* [Packed Add-in 64bit](OctopartXll/bin/Release/OctopartXll-AddIn64-packed.xll)
+* [Packed Add-in 32bit](OctopartXll/bin/Release/OctopartXll-AddIn-packed.xll)
 
 2. In Excel, choose 'File -> Options -> Add-ins', then press 'Go...' to manage the 'Excel Add-ins'.
 ![](docs/add-ins.png?raw=true)
