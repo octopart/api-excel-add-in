@@ -3,7 +3,7 @@ Thumbs.db
 
 #Include the release binaries ".Xll" files
 OctopartXll/bin/Release/**
-!OctopartXll/bin/Release/*.Xll
+!OctopartXll/bin/Release/*packed*.Xll
 
 #Otherwise ignore files built by Visual Studio
 *.obj
