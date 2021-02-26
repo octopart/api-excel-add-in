@@ -1,9 +1,9 @@
 #Ignore thumbnails created by Windows
 Thumbs.db
 
-#Include the release binaries ".Xll" files
+#Include the release binaries ".xll" files
 OctopartXll/bin/Release/**
-!OctopartXll/bin/Release/*.Xll
+!OctopartXll/bin/Release/*packed.xll
 
 #Otherwise ignore files built by Visual Studio
 *.obj
