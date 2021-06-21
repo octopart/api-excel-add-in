@@ -66,6 +66,21 @@ namespace OctopartXll
         #endregion
 
         #region ExcelUdfs
+        [ExcelFunction(Category = "Octopart Queries", Description = "Get a test string", HelpTopic = "OctopartAddIn.chm!1102", IsVolatile = true)]
+        public static object NEXAR_GET_TEST()
+        {
+            return "Version: " + "hello";
+        }
+
+        [ExcelFunction(Category = "Octopart Queries", Description = "Get a test string", HelpTopic = "OctopartAddIn.chm!1102", IsVolatile = true)]
+        public static object NEXAR_GET_TOKEN(
+            [ExcelArgument(Description = "Client ID", Name = "Client Id")] string cid,
+            [ExcelArgument(Description = "Client Secret", Name = "Client Secret")] string sec)
+        {
+            string tok = GetTokenAsync(cid, sec).Result;
+            return "Token: " + tok;
+        }
+
         [ExcelFunction(Category = "Octopart Queries", Description = "Gets the Octopart Details URL", HelpTopic = "OctopartAddIn.chm!1001")]
         public static object OCTOPART_DETAIL_URL(
             [ExcelArgument(Description = "Part Number Lookup", Name = "MPN or SKU")] string mpn_or_sku,
