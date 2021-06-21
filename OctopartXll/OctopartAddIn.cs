@@ -3,9 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Threading;
+using System.Threading.Tasks;
+using System.Net.Http;
+
 using ExcelDna.Integration;
 using ExtensionMethods;
 using OctopartApi;
+
+using Nexar.Client.Token;
 
 namespace OctopartXll
 {
@@ -962,6 +967,16 @@ namespace OctopartXll
                 .ToList();
             return cleanDistributors;
         }
+        
+        public static async Task<string> GetTokenAsync(string clientId, string clientSecret)
+        {
+            var authority = "https://identity.nexar.com/";
+            //var authority = "https://identity.nexar.com/connect/token";
+            var client = new HttpClient();
+            string token = await client.GetNexarTokenAsync(clientId, clientSecret, authority);
+            return token;
+        }
+        
         #endregion
     }
 }
