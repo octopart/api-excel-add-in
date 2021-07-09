@@ -1,4 +1,13 @@
-# Octopart Excel Add-In
+# Nexar Supply Excel Add-In
+
+Below are instructions for using this open-sourced but unsupported Octopart Excel Add-In. This has, however, been superseded by the Nexar Supply Excel Add-in which still offers the same functionality in terms of access pricing and availability data for your BOM from directly within Microsoft Excel. Sign up at the Nexar.com website.
+
+* [Nexar Supply Excel Add-in](https://github.com/NexarDeveloper/nexar-supply-excel-cs)
+* [Nexar.com](http://www.nexar.com)
+
+---
+
+# Octopart Excel Add-In (Unsupported)
 
 The Octopart Excel Add-In enables you to access pricing and availability data from right within Microsoft Excel. You can pull part information for your BOM all at once without leaving your spreadsheet.
 
