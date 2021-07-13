@@ -129,8 +129,7 @@ namespace OctopartApi
             var client = new RestClient(OCTOPART_URL_BASE);
             var req = new RestRequest(OCTOPART_URL_PART_MATCH_ENDPOINT, Method.GET)
                 .AddParameter("apikey", apiKey)
-                .AddParameter("queries", queryString)
-                .AddParameter("include[]", "datasheets");
+                .AddParameter("queries", queryString);
 
             req.Timeout = httpTimeout;
             req.UseDefaultCredentials = true;
